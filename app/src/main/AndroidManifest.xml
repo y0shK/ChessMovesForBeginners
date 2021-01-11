@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chessmovesforbeginners">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_rook_bg"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_rook_bg_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ChessMovesForBeginners">
+        <activity android:name=".AppInfo"></activity>
+        <activity android:name=".KingJava" />
+        <activity android:name=".QueenJava" />
+        <activity android:name=".RookJava" />
+        <activity android:name=".BishopJava" />
+        <activity android:name=".KnightJava" />
+        <activity android:name=".PawnJava" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
