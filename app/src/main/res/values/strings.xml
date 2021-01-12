@@ -11,4 +11,8 @@
     <string name="info_button">Info Button</string>
     <string name="night_mode_switch_string">Night Mode</string>
     <string name="app_settings">App settings</string>
+    <string name="about_string">About</string>
+    <string name="about_info_string">Click the button for each piece to see how it can move.</string>
+    <string name="copyright_string">Copyright</string>
+    <string name="copyright_info_string">All chess assets (pieces and board) were created by me.</string>
 </resources>
