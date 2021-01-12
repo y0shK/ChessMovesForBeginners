@@ -7,8 +7,8 @@
     <string name="queen">Queen</string>
     <string name="king">King</string>
     <string name="android_three_dots">&#8942;</string>
-    <string name="app_info">App Info</string>
+    <string name="app_info">App info</string>
     <string name="info_button">Info Button</string>
     <string name="night_mode_switch_string">Night Mode</string>
-
+    <string name="app_settings">App settings</string>
 </resources>

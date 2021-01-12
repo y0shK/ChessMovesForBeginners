@@ -9,6 +9,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(appInfoIntent);
     }
 
+    public void getAppSettings() {
+        Intent appSettingsIntent = new Intent(this, AppSettings.class);
+        startActivity(appSettingsIntent);
+    }
+
     // check if info menu is pressed, then move to the appropriate activity
     // https://stackoverflow.com/questions/38887304/what-does-this-method-do-super-oncreateoptionmenu-and-super-onoptionsitemselec
     // switch statement works, even if it looks deprecated
@@ -41,8 +47,11 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection - can be for 1 menu item or for multiple menu items
         switch (item.getItemId()) {
-            case R.id.info_menu: // if the item selected is the "get info" item
+            case R.id.app_info_id: // if the item selected is the "get info" item
                 getAppInfo(); // get the app info by creating a new intent and switching activities
+                return true;
+            case R.id.app_settings_id:
+                getAppSettings();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
